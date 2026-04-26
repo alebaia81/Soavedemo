@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologie Avanzate | Centro Estetico Soave</title>
+    <meta name="description" content="Scopri le tecnologie avanzate a San Nazzaro (PC) presso il Centro Estetico Soave. Apparecchiature all'avanguardia per risultati duraturi.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-hero {
+            background-color: var(--color-bg-alt);
+            padding: 180px 2rem 80px;
+            text-align: center;
+        }
+        .page-hero h1 {
+            font-size: 3.5rem;
+            color: var(--color-text);
+            margin-bottom: 1.5rem;
+        }
+        .treatment-detail {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+        .treatment-detail:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .treatment-image {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        .treatment-image img {
+            width: 100%;
+            display: block;
+        }
+        .treatment-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        .treatment-text h2 {
+            font-size: 2.5rem;
+            color: var(--color-accent);
+            margin-bottom: 1.5rem;
+        }
+        .treatment-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--color-text-muted);
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Contact Form Styles */
+        .contact-form-section {
+            background-color: white;
+            padding: 4rem 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+            max-width: 800px;
+            margin: 0 auto 4rem auto;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-control {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: 1px solid rgba(0,0,0,0.1);
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--color-accent);
+        }
+        select.form-control {
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23D4A574%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1rem top 50%;
+            background-size: 0.65rem auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="./image/logo.png" alt="Soave Logo" class="logo-img">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html#chi-siamo">Chi Siamo</a></li>
+                    <li><a href="index.html#trattamenti">Trattamenti</a></li>
+                    <li><a href="index.html#team">Team</a></li>
+                    <li><a href="index.html#contatti">Contatti</a></li>
+                </ul>
+                <a href="https://wa.me/390000000000" class="btn" style="padding: 0.6rem 1.5rem; font-size: 0.8rem;">Prenota</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-hero">
+        <div class="container">
+            <h1>Tecnologie Avanzate</h1>
+            <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; color: var(--color-text-muted);">
+                Apparecchiature di ultima generazione per combattere gli inestetismi e rimodellare la silhouette con risultati visibili e duraturi.
+            </p>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="treatment-detail">
+                <div class="treatment-image">
+                    <img src="./image/technologies.png" alt="Tecnologie Estetiche Avanzate">
+                </div>
+                <div class="treatment-text">
+                    <h2>Innovazione al servizio della Bellezza</h2>
+                    <p>Nel nostro centro utilizziamo solo macchinari all'avanguardia per offrirti trattamenti sicuri, non invasivi ed estremamente efficaci. Ogni percorso è personalizzato per rispondere alle tue esigenze specifiche.</p>
+                    <p>Le nostre tecnologie di punta includono la <strong>Radiofrequenza</strong>, ideale per il ringiovanimento e la tonificazione dei tessuti, e il sistema <strong>T-Shape</strong> o similari, perfetto per il rimodellamento corporeo e il trattamento della cellulite.</p>
+                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 2rem; color: var(--color-text-muted);">
+                        <li style="margin-bottom: 0.5rem;">Risultati mirati su adiposità localizzate.</li>
+                        <li style="margin-bottom: 0.5rem;">Miglioramento dell'elasticità cutanea.</li>
+                        <li style="margin-bottom: 0.5rem;">Trattamenti sicuri, indolori e rilassanti.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Modulo Contatti WhatsApp -->
+            <div class="contact-form-section" id="richiedi-info">
+                <h2 style="text-align: center; color: var(--color-accent); margin-bottom: 2rem; font-size: 2rem;">Richiedi una Consulenza</h2>
+                <p style="text-align: center; color: var(--color-text-muted); margin-bottom: 2.5rem;">
+                    Non sai quale tecnologia è più adatta a te? Compila il modulo: ti consiglieremo il percorso migliore su WhatsApp.
+                </p>
+                
+                <form class="wa-form">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Nome e Cognome *" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control" placeholder="La tua Email *" required>
+                    </div>
+                    <div class="form-group">
+                        <select name="treatment" class="form-control" required>
+                            <option value="" disabled selected>Seleziona un Trattamento *</option>
+                            <option value="Consulenza Tecnologie Corpo">Consulenza Tecnologie Corpo</option>
+                            <option value="Consulenza Tecnologie Viso">Consulenza Tecnologie Viso</option>
+                            <option value="Radiofrequenza">Radiofrequenza</option>
+                            <option value="Pressoterapia">Pressoterapia</option>
+                        </select>
+                    </div>
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer; font-size: 1.1rem; padding: 1.2rem;">
+                            Invia su WhatsApp
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background-color: var(--color-text); color: white; padding: 4rem 2rem; text-align: center;">
+        <div class="container">
+            <img src="./image/logo.png" alt="Soave Logo" style="height: 60px; margin-bottom: 2rem; filter: brightness(0) invert(1);">
+            <p>&copy; 2026 Soave Estetica. Tutti i diritti riservati.</p>
+            <p style="font-size: 0.8rem; margin-top: 1rem; color: #888;">P.IVA 00000000000 | San Nazzaro (PC)</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
