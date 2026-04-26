@@ -56,3 +56,35 @@ document.querySelectorAll('section').forEach(section => {
     section.style.transition = 'all 0.6s ease-out';
     observer.observe(section);
 });
+
+// Map Initialization
+document.addEventListener('DOMContentLoaded', () => {
+    const mapElement = document.getElementById('map');
+    if (mapElement) {
+        // Coordinate per Via Cittadella 48, San Nazzaro (PC)
+        const lat = 45.0764;
+        const lng = 9.8985;
+        
+        const map = L.map('map', {
+            scrollWheelZoom: false // Evita lo zoom accidentale durante lo scroll della pagina
+        }).setView([lat, lng], 16);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Icona personalizzata color oro (come il brand Soave)
+        const goldIcon = L.icon({
+            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-gold.png',
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41]
+        });
+
+        L.marker([lat, lng], {icon: goldIcon}).addTo(map)
+            .bindPopup('<strong>Soave Estetica</strong><br>Via Cittadella 48, San Nazzaro (PC)')
+            .openPopup();
+    }
+});
