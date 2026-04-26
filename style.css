@@ -80,11 +80,11 @@ nav {
     height: 144px;
     width: auto;
     transition: all 0.3s ease;
+    filter: brightness(0.15); /* Rende il logo scuro per contrastare col fondo chiaro */
 }
 
 header.scrolled .logo-img {
     height: 100px;
-    filter: invert(1);
 }
 
 .nav-links {
