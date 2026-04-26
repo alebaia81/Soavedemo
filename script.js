@@ -88,3 +88,33 @@ document.addEventListener('DOMContentLoaded', () => {
             .openPopup();
     }
 });
+
+// WhatsApp Form Handler
+document.addEventListener('DOMContentLoaded', () => {
+    const waForms = document.querySelectorAll('.wa-form');
+    
+    waForms.forEach(form => {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault(); // Evita il ricaricamento della pagina
+            
+            // Recupera i valori dai campi
+            const name = this.querySelector('input[name="name"]').value.trim();
+            const email = this.querySelector('input[name="email"]').value.trim();
+            const treatment = this.querySelector('select[name="treatment"]').value;
+            
+            // Numero di telefono fisso del centro (da sostituire con quello reale)
+            const phoneNumber = "390000000000"; 
+            
+            // Costruisce il messaggio
+            let message = `Salve, sono ${name}.\n`;
+            message += `Vorrei ricevere maggiori informazioni riguardo al trattamento: *${treatment}*.\n`;
+            if(email) {
+                message += `La mia email per eventuali comunicazioni è: ${email}\n`;
+            }
+            
+            // Codifica l'URL e redireziona a WhatsApp
+            const waUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(waUrl, '_blank');
+        });
+    });
+});
